@@ -2,7 +2,6 @@ from flask import Flask, request, jsonify
 from captionbot import CaptionBot
 
 app = Flask(__name__)
-app.config["DEBUG"] = False 
 
 @app.route('/', methods = ['POST', 'GET'])
 def home():
@@ -18,4 +17,4 @@ def caption():
         return image_caption_result 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0')
+    app.run(debug=True)
