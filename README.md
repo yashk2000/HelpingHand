@@ -12,6 +12,7 @@ according to the `Captionbot`.
 
 ```sh
 $ git clone https://github.com/HarshCasper/HelpingHand.git
+$ git checkout Backend-CaptionBot
 ```
 
 3. Make a Virtual Environment:
